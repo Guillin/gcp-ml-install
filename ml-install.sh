@@ -45,7 +45,7 @@ echo "checking main libraries version installed"
 echo
 source activate datasci-env
 
-python versions.py
+python ds-versions.py
 
 source deactivate datasci-env
 
