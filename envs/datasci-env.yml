@@ -1,0 +1,69 @@
+# -----------------------------------------------------------------------------
+# Anaconda Machine Learning Environment - based on Anaconda channel.
+#
+# For create this environment run: conda env create --file datasci-env.yml
+# For update this environment run: conda env update --file datasci-env.yml --prune
+# For remove this environment run: conda env remove --name datasci-env
+#
+# -----------------------------------------------------------------------------
+#
+
+name: ml
+channels:
+  - anaconda
+  - conda-forge
+dependencies:
+  - anaconda::python=3.7.6
+  # ---------------------------------- Libs -----------------------------------
+  - anaconda::graphviz
+  - anaconda::imageio
+  - anaconda::matplotlib
+  - anaconda::numba
+  - anaconda::numpy
+  - anaconda::opencv
+  - anaconda::pandas
+  - anaconda::psutil
+  - anaconda::pyyaml
+  - anaconda::requests
+  - anaconda::scikit-image
+  - anaconda::scikit-learn
+  - anaconda::scipy
+  - anaconda::seaborn
+  - anaconda::statsmodels
+  - anaconda::sympy
+  - anaconda::tabulate
+  - anaconda::theano
+  - anaconda::tqdm
+  # --------------------------------- Tools -----------------------------------
+  - conda-forge::Cython
+  - conda-forge::ipython
+  - conda-forge::jupyter
+  - conda-forge::jupyterlab
+  - conda-forge::jupytext
+  - conda-forge::notebook
+  - conda-forge::kaggle 
+  - conda-forge::google-cloud-storage 
+  # --------------------------------- Tests -----------------------------------
+  - conda-forge::pytest
+  # --------------------------- ML Additional libs ----------------------------
+  - conda-forge::catboost
+  - conda-forge::hdbscan
+  - conda-forge::lightgbm
+  - conda-forge::xgboost
+
+  # ---------------------------- Text processing ------------------------------
+  - conda-forge::langdetect
+  - conda-forge::textdistance
+
+  # ------------------------------- Formatters --------------------------------
+  - conda-forge::bandit
+  - conda-forge::black
+  - conda-forge::flake8
+  - conda-forge::isort
+  - conda-forge::pydocstyle
+  - conda-forge::pylint
+  # ---------------------------------- pip ------------------------------------
+  - pip
+  - pip:
+      - prospector
+      - pytype
