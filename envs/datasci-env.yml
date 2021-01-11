@@ -8,7 +8,7 @@
 # -----------------------------------------------------------------------------
 #
 
-name: ml
+name: ds
 channels:
   - anaconda
   - conda-forge
@@ -43,6 +43,7 @@ dependencies:
   - conda-forge::notebook
   - conda-forge::kaggle 
   - conda-forge::google-cloud-storage 
+  - conda-forge::gcsfs
   # --------------------------------- Tests -----------------------------------
   - conda-forge::pytest
   # --------------------------- ML Additional libs ----------------------------
@@ -50,7 +51,10 @@ dependencies:
   - conda-forge::hdbscan
   - conda-forge::lightgbm
   - conda-forge::xgboost
-
+  # ------------------------- Model Interpretability libs -------------------------
+  - conda-forge::eli5 
+  - conda-forge::lime
+  - powerai::shap   
   # ---------------------------- Text processing ------------------------------
   - conda-forge::langdetect
   - conda-forge::textdistance
