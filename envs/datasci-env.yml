@@ -51,6 +51,7 @@ dependencies:
   - conda-forge::hdbscan
   - conda-forge::lightgbm
   - conda-forge::xgboost
+  - conda-forge::bayesian-optimization
   # ------------------------- Model Interpretability libs -------------------------
   - conda-forge::eli5 
   - conda-forge::lime
