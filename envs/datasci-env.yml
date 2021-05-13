@@ -13,7 +13,7 @@ channels:
   - anaconda
   - conda-forge
 dependencies:
-  - anaconda::python=3.7.6
+  - python=3.7.10
   # ---------------------------------- Libs -----------------------------------
   - anaconda::graphviz
   - anaconda::imageio
@@ -55,13 +55,15 @@ dependencies:
   # ------------------------- Model Interpretability libs -------------------------
   - conda-forge::eli5 
   - conda-forge::lime
-  - powerai::shap   
+  #- powerai::shap   
   # ---------------------------- Variable processing ------------------------------
   - conda-forge::category_encoders 
   # ---------------------------- Text processing ------------------------------
   - conda-forge::langdetect
   - conda-forge::textdistance
-
+  - conda-forge::spacy
+  - anaconda::nltk
+  - anaconda::gensim
   # ------------------------------- Formatters --------------------------------
   - conda-forge::bandit
   - conda-forge::black
